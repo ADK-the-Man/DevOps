@@ -1,0 +1,55 @@
+
+
+************************************************************Vagrant*********************************************************************************
+
+Vagrant is an automation tool which uses Hypervisor to create the VM using the Vagrant images/boxes from the vagrant cloud with the codes
+from the CLI.
+
+- To automate the VM installation while Multi-VM setup
+- In Vagrant there are No OS installations and we set up VM using Vagrant images which are called as Vagrant Boxes
+- These are ready made virtual machines which are available in vagrant cloud
+- All configuration changes or any other VM changes can be done through the Vagrant File
+- We can execute scripts and commands in Vagrant to power off/ create / delete etc.
+
+Vagrant Commands:
+
+vagrant init geerlingguy/centos7 	Vagrant init 'Vagrant images or Boxes for VM'
+vagrant up				To create a VM using hypervisor if not exists or to start the existing VM
+vagrant ssh				To Login into the VM using ssh (Has to be in the directory of that vagrant box)
+vagrant halt				To power off the VM running in the Hypervisor
+
+vagrant init ubuntu/bionic64
+vagrant up
+vagrant ssh
+vagrant halt
+vagrant destroy				To delete a VM which is created
+vagrant reload				To Reboot a VM
+
+
+***************************************************************LINUX*******************************************************************************
+
+Linux is a family of open-source Unix-like operating systems based on the Linux kernel.
+
+Open Source Software : It is a software with source code that anyone can inspect, modify, and enhance.
+
+In Linux, Everything is considered as a file (including the hardware) and most servers runs on Linux. Automation and security in linux
+are the prior reasons for using Linux.
+
+Linux Distros currently used:
+
+RPM based : RHEL, Centos, Oracle Linux		(Best for Server-based)
+Debian based : Ubuntu Server, Kali Linux	(Best for DevOps-based for automation)
+
+Important Directories (Grab Doc)
+Configuration : /etc (related to network, server etc)
+
+Linux Commands:
+
+touch filename{1..10}.txt			Creates the 10 text files with the names as filename1.txt, filename2.txt .... upto filename10.txt
+mv *.txt "path to move"				It transfers all the Files ending with ".txt" to the destination folder
+
+
+
+
+
+
