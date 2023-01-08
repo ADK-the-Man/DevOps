@@ -45,11 +45,40 @@ Configuration : /etc (related to network, server etc)
 
 Linux Commands:
 
+ls -ltr						L :  List all the file 		t : Sort based on Time stamp		r : reverse the order
 touch filename{1..10}.txt			Creates the 10 text files with the names as filename1.txt, filename2.txt .... upto filename10.txt
 mv *.txt "path to move"				It transfers all the Files ending with ".txt" to the destination folder
-
-
-
-
-
+Vi Editor
+	- :se nu				To set the line numbers for the created text file	Extended-Command-Mode
+	- gg					To go to top of the file				Command-Mode
+	- Shft+G				To go to end of the file				Command-Mode
+	- yy					To Copy the Line [ yyyy - To copy four lines ]		Command-Mode
+	- p					To paste the Line					Command-Mode
+	- U					To undo							Command-Mode
+	- dd					To cut or to delete [dddd to cut or delete four lines]	Command-Mode
+	- /					To search the words in a File				Command-Mode
+Link to a path
+	ln -s /home/dev/xyz.txt Link_name	Creates a Link for the selected path [cat Link_name ]
+	unlink Link_name			Removes the Link that has been created
+File type
+	file filename				To check the type of a File
+Filter the Results (Grep)
+	grep -i word *				To check all the files in that path and result lines which has word.
+	grep -iR word *				To check the Sub directories as well for the results
+	grep -vi word *				To result out all the lines without having the word
+	less and more				To view the files 
+	head -n filename			To view first n lines of a file
+	tail -n filename			To view last  n lines of a file
+Redirections
+	uptime > path				To redirect the result to store in defined path [ overrides the file data if any ]
+	uptime >> path				Same as the previous one but it appends the new result without overriding.
+	echo  "To print something" > path	To print something we use echo and later we can also direct it to file in path. 
+	->Disk Commands
+	free -m					To get details of available and utilized free spaces
+	df -h					Detailed info of the folders and their sizes and mounting points
+	du -sh					To get the size of the folder content.
+	-> Redirecting utilization for error logs
+	free -m 2>> /error.log			2 is for standard error. It records the error and stores in the path (error.log)
+	free -m 1>> path			1 is for standard output. [By default it is one]
+	free -m &>> path			& is for both error and successful result.
 
