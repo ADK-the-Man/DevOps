@@ -1,0 +1,30 @@
+
+
+************************************************************Users & Groups*********************************************************************************
+
+There are 3 types of users in linux
+
+Root			root			/bin/bash		/root
+
+Regular			vagrant,adk		/bin/bash		/home/username
+	
+Service			ftp,ssh,apache		/sbin/nologin		/var/ftp or /etc
+
+/etc/passwd and /etc/group
+
+useradd `name`				Adding the user
+id `name`				Details of the created user
+passwd `name`				Setting the password for the user
+groupadd `name`				Creates the group
+usermod -aG `grp_name` `username`	Adding the user to the Sub group in group_name (g - primary)	
+lsof -u `username`	Shows up the files opened by that user
+userdel	`username`	Deletes the user
+userdel -r `username`	Deletes the user along with home directory of the user
+groupdel `groupname`	Deletes a Group with the name
+
+File Permission and sudo Related topics
+
+chmod 'restriction' 'directorypath'
+chown 'user+(grp)'  'directorypath'
+
+visudo
