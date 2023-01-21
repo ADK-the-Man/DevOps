@@ -1,0 +1,68 @@
+ cd VirtualBox VMs
+  401  history
+  402  cd /e/DevOps\ Course/
+  403  cd vm-vagrant/
+  404  cd centos7/
+  405  vagrant ssh
+  406  vagrant halt
+  407  vagrant up
+  408  vagrant ssh
+  409  vagrant halt
+
+22-01-2022
+
+ cat /etc/passwd
+   46  clear
+   47  head -1 /etc/passwd
+   48  grep vagrant /etc/passwd
+   49  cat /etc/passwd
+   50  cat /etc/group
+   51  grep vagrant /etc/passwd
+   52  grep vagrant /etc/groups
+   53  grep vagrant /etc/group
+   54  id vagrantr
+   55  id vagrant
+   56  useradd ansible
+   57  useradd jenkins
+   58  useradd aws
+   59  tail -4 /etc/passwd
+   60  tail -4 /etc/group
+   61  id ansible
+   62  groupadd devops
+   63  clear
+   64  usermod -aG ansible
+   65  usermod -aG devops ansible
+   66  id ansible
+   67  grep devops /etc/group
+   68  vim /etc/group
+   69  vi /etc/group
+   70  id aws
+   71  id jenkins
+   72  passwd ansible
+   73  passwd jenkins
+   74  su -ansible
+   75  su - ansible
+   76  whoami
+   77  passwd aws
+   78  passwd ansible
+   79  passwd jenkins
+   80  clear
+   81  last
+   82  who
+   83  lsof -u vagrant
+   84  yum install lsof -y
+   85  lsof -u vagrant
+   86  lsof -u jenkins
+   87  lsof -u aws
+   88  lsof -u  ansible
+   89  clear
+   90  userdel aws
+   91  ls
+   92  ls /home
+   93  userdel -r jenkins
+   94  ls
+   95  ls /home
+   96  groupdel devops
+   97  userdel -r ansible
+   98  ls /home
+   99  rm -rf /home/aws
