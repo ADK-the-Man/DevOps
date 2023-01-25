@@ -1,0 +1,52 @@
+								Package Management
+
+tree is the basic command in software management to view the tree structure of a directory path.
+
+curl (short for "Client URL") is a command line tool that enables data transfer over various network protocols. It communicates with a web or application server by specifying a relevant 
+URL and the data that need to be sent or received.
+
+>>curl https://rpmfind.net/linux/centos/7.9.2009/os/x86_64/Packages/tree-1.6.0-10.el7.x86_64.rpm -o tree-1.6.0-10.el7.x86_64.html
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 47508  100 47508    0     0  35618      0  0:00:01  0:00:01 --:--:-- 35613
+
+This finds the link and -o will generates and stores the output of the webpage result in the name as given in the end.
+
+This is basically done whenever you want to install or download anything in the VM.
+
+Once after downloading to install the tree, 
+
+>> rpm -ivh package_name
+
+i - install
+v - verbose (The verbose option specifies that you want to display detailed processing information on your screen)
+h - Human Readable Format
+
+This command will show the installtion process in a human readable format.
+
+RPM is the Red-HAt package manager to install/uninstall the packages
+
+RPM doesn't install dependenices so while installing any pckage with dependenices we have install them seperately.
+
+YUM resolves this conflict, yum install dependeicnes that are required for the current package automatically.
+
+>> yum install package_name
+Example : yum install httpd
+
+>>yum remove httpd
+
+Review Process once--!!
+
+
+To archieve we use TAR and ZIP
+
+>>tar -xzvf jenkins_djsdks.tar.gz
+
+>>tar -xzvf jenkins_name.tar.gz -C /opt/
+
+Like Yum for Redhat machine we have dpkg for debian machines
+
+
+
+
+
