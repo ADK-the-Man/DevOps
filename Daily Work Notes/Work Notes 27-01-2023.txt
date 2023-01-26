@@ -1,0 +1,29 @@
+Setting Up a Website
+
+Website related in a Linux VM will be in the '/var/www/html'
+
+systemctl start httpd - to start httpd services
+
+systemctl enable httpd - to enable httpd services while the VM boots up
+
+
+
+Automating the Website setup
+
+- Vagrant provisioning is used for automating the website and this further includes to involve all the steps which are used to setup a
+website in the VM and it is called as the "Infrastructure as a Code"
+
+- Entire Infrastructure of the website are provisioned through vagrant
+
+- CloudFormation and Terraform are the Infrastructure as a Code for the cloud computing environemnt as Vagrant for the VM in Linux enviromment
+
+- Vagrant for local
+- Terraform for Cloud
+- Ansible for Servers
+- CloudFormation for AWS
+
+-> Automating the Website setup by Vagrant provisininig through the Vagrant file.
+
+-> Multiple VM setup using Vagrant
+
+Review Wordpress setup for backend mysql once..
