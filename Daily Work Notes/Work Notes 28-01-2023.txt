@@ -1,0 +1,9 @@
+Vprofile project setup
+
+Everything is fine
+
+Look out for tomcat setup and the artifact deployment in manual provisonaing once.
+
+Commands came handy and looking forward for Docker and Kubernetes
+
+Jenkins should be the primary tool and looking forward to it.
