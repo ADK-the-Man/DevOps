@@ -7,3 +7,5 @@ Look out for tomcat setup and the artifact deployment in manual provisonaing onc
 Commands came handy and looking forward for Docker and Kubernetes
 
 Jenkins should be the primary tool and looking forward to it.
+
+Added it for the poll SCM in jenkins setup //20-01-2024
